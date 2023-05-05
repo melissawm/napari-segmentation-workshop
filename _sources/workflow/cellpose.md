@@ -1,10 +1,10 @@
 ![Samples of images segmented by Cellpose](images/Cellpose-banner.png)
 Cellpose-napari + FIJI
 =======================
-
+**By [Frederic Bonnet](https://chanzuckerberg.github.io/napari-segmentation-workshop/preface/whomadethis.html#frederic-bonnet) 🔬**
 ## Learning Objectives
 
-In this lesson, you'll learn how to use and configure the Cellpose plugin for napari, in conjunction with FIJI, to complete a segmentation workflow.
+In this lesson, you'll learn how to use the Cellpose napari plugin in conjunction with FIJI to complete a segmentation workflow.
 
 1.  [Loading an image correctly in *Cellpose-napari*](cellpose-parameters.md)
 2.  [Understanding and adjusting parameters in Cellpose](cellpose-parameters.md)
@@ -16,7 +16,7 @@ In this lesson, you'll learn how to use and configure the Cellpose plugin for na
 
 | Napari version and plugins                                                                     | Importance | Notes |
 | -------------------------------------------------------------------------------- | ---------- | ----- |
-| [napari v 0.4.14](https://chanzuckerberg.github.io/napari-segmentation-workshop/onboard/lesson3.html) | Mandatory  | In the napari viewer, verify your version of napari by clicking on the **Help** menu, then **napari info**. | |
+| [napari v 0.4.17](https://chanzuckerberg.github.io/napari-segmentation-workshop/onboard/lesson3.html) | Mandatory  | In the napari viewer, verify your version of napari by clicking on the **Help** menu, then **napari info**. | |
 | [cellpose v 0.1.4](https://www.napari-hub.org/plugins/cellpose-napari) | Mandatory  | Install this plugin from within the napari viewer, by going to the **Plugin** menu, then clicking on **Install/uninstall plugins**. Search for *Cellpose-napari* and click **install**. | |
 | [FIJI](https://imagej.net/software/fiji/) | Mandatory  | | |
 | [Bio Formats for Image J/FIJI](https://imagej.net/formats/bio-formats) | Mandatory  | Allows us to open our image's mask in FIJI.| |
@@ -30,7 +30,7 @@ In this lesson, you'll learn how to use and configure the Cellpose plugin for na
 
 ## What does this plugin do?
 
-*Cellpose-napari* utilizes a generalist algorithm for cell and nucleus segmentation. It allows you to perform segmentation workflows on **cell bodies**, **membranes** and **nuclei** from microscopy images. It also has deep-learning built-in, allowing it to segment many types of cells without requiring parameter adjustments, new training data or further model retraining. Because of its versatility, it supports a wide variety of microscopy modalities and fluorescent markers.
+*Cellpose-napari* utilizes a generalist algorithm for cell and nucleus segmentation. It allows you to perform segmentation workflows on **cell bodies**, **membranes** and **nuclei** in images. It also has deep-learning built-in, allowing it to segment many types of cells without requiring parameter adjustments, new training data, or further model retraining. Because of its versatility, it supports a wide variety of microscopy modalities and fluorescent markers.
 
 ## Demo of *Cellpose-napari*
 
@@ -43,7 +43,7 @@ In this lesson, you'll learn how to use and configure the Cellpose plugin for na
 The above video demonstrates how to open the *Cellpose-napari* plugin, segment your image, and adjust its parameters. If you would like a more detailed [explanation of each parameter](cellpose-parameters.md), proceed to the next part of this lesson. 
   
 :::{note}
-Because napari can't export an image's mask at this time, we must use FIJI for this. The final part of this lesson covers [segmenting your image](cellpose-FIJI.md) with *cellpose-napari*, then using FIJI to refine, export, and analyze your image's mask. 
+Because napari can't export an image's mask at this time, we must use FIJI for this. The final part of this lesson covers [segmenting your image](cellpose-FIJI.md) with *cellpose-napari*, then using FIJI to export and analyze your image's mask. 
 :::
 
 ## Supporting materials
